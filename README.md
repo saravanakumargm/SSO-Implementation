@@ -1,4 +1,4 @@
-# SSO (Single Sign-On) Proof of Concept
+# SSO (Single Sign-On) 
 
 This is a comprehensive SSO implementation demonstrating how multiple applications can share authentication using a centralized authentication server.
 
