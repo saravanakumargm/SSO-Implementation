@@ -2,7 +2,7 @@
 
 This is a comprehensive SSO implementation demonstrating how multiple applications can share authentication using a centralized authentication server.
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
@@ -16,9 +16,9 @@ This is a comprehensive SSO implementation demonstrating how multiple applicatio
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
-## ✨ Features
+##  Features
 
-### ✅ Implemented Features
+###  Implemented Features
 - **Centralized Authentication**: Single auth server handles all authentication
 - **JWT-based Tokens**: Secure, stateless authentication using JSON Web Tokens
 - **Cross-domain Cookie Sharing**: Cookies shared across `.localhost` domain
@@ -29,7 +29,7 @@ This is a comprehensive SSO implementation demonstrating how multiple applicatio
 - **Health Checks**: Monitoring endpoints for all services
 - **Logging**: Request logging for debugging and auditing
 
-### 🔒 Security Features
+###  Security Features
 - **HttpOnly Cookies**: Prevents XSS attacks
 - **Secure Cookies**: HTTPS-only in production
 - **Session Validation**: Server-side session tracking
@@ -37,7 +37,7 @@ This is a comprehensive SSO implementation demonstrating how multiple applicatio
 - **CSRF Protection**: SameSite cookie attribute
 - **Input Validation**: Basic request validation
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js (v14 or higher)
@@ -74,7 +74,7 @@ npm run start:app-a
 npm run start:app-b
 ```
 
-## 🎯 Usage
+##  Usage
 
 ### 1. Access Applications
 - **Auth Server**: http://localhost:3000
@@ -94,7 +94,7 @@ npm run start:app-b
 - User information is shared across all applications
 - Logout from any app will log you out from all apps
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 sso-poc/
@@ -108,7 +108,7 @@ sso-poc/
 └── README.md          # This file
 ```
 
-## 🔧 Configuration
+##  Configuration
 
 ### Environment Variables (.env file)
 ```bash
@@ -136,7 +136,7 @@ SESSION_TIMEOUT=3600000
 TOKEN_EXPIRY=1h
 ```
 
-## 🛠️ API Endpoints
+##  API Endpoints
 
 ### Auth Server (Port 3000)
 - `POST /login` - Login endpoint
@@ -184,7 +184,7 @@ TOKEN_EXPIRY=1h
 - `GET /api/user` - User information API
 - `GET /health` - Health check
 
-## 🔍 Testing the SSO Flow
+##  Testing the SSO Flow
 
 ### Using curl
 ```bash
@@ -213,5 +213,4 @@ curl -X POST http://localhost:3000/logout -b cookies.txt
 6. **Navigate to App B**: http://localhost:3002
 7. **You should be automatically logged in**
 8. **Test logout**: Use the logout endpoint
-9. 
 
