@@ -25,9 +25,6 @@ This is a comprehensive SSO implementation demonstrating how multiple applicatio
 - **Automatic Redirects**: Apps redirect to auth server when not authenticated
 - **Session Management**: Active session tracking with logout functionality
 - **JSON API Responses**: Clean, structured JSON responses for all endpoints
-- **Environment Configuration**: Flexible configuration via environment variables
-- **Health Checks**: Monitoring endpoints for all services
-- **Logging**: Request logging for debugging and auditing
 
 ###  Security Features
 - **HttpOnly Cookies**: Prevents XSS attacks
